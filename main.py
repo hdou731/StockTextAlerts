@@ -141,9 +141,9 @@ def sub_service():
 
         info = get_ticker_info(key)
         for target in targets_to_send_to:
-            account = "AC96de2b95ee1a24d0b937b721018c82d2"
-            token = "0a620fdfdfcb57dbdba7508884ee76df"
-            twilio_number = "+14152149454"
+            account = ""
+            token = ""
+            twilio_number = ""
             client = TwilioRestClient(account, token)
             message = client.sms.messages.create(to=target,
                                                  from_=twilio_number,
